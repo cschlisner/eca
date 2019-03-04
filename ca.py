@@ -182,8 +182,3 @@ elif ("--evolve-all" in sys.argv):
 
 else:
 	run(RULE, s, I, s0, s1)
-
-
-
-
-
