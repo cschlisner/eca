@@ -92,7 +92,7 @@ elif ("-r" in sys.argv):
 else: s = [0] * WIDTH + [1]
 
 # set symbols for output according to user -- defaults to block and space
-s1 = "\u2588" if ("-s1" not in sys.argv) else sys.argv[sys.argv.index("-s1")+1]
+s1 = blk if ("-s1" not in sys.argv) else sys.argv[sys.argv.index("-s1")+1]
 _s0 = s0 = " " if ("-s0" not in sys.argv) else sys.argv[sys.argv.index("-s0")+1]
 filter_r110_eth = "-eth" in sys.argv
 step_delay = 0.01 if ("-d" not in sys.argv) else float(sys.argv[sys.argv.index("-d")+1])
