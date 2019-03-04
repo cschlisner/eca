@@ -147,9 +147,10 @@ def run(rule, state, iterations, s0=" ", s1=blk):
 			if (not silent_mode):
 				for x in state:
 					if x == 0:
-						print s0,
-					else: print s1,
-				print ""
+						sys.stdout.write(s0)
+					else: sys.stdout.write(s1)
+				sys.stdout.write("\n")
+				sys.stdout.flush()
 				time.sleep(step_delay)
 			state = iterate(state, rule)
 		if (silent_mode):
